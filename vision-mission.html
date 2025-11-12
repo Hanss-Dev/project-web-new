@@ -1,20 +1,17 @@
 <!DOCTYPE html>
-   <html lang="en">
-   <head>
-      <meta charset="UTF-8">
-      <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-      <!--=============== REMIXICONS ===============-->
-      <link href="https://cdn.jsdelivr.net/npm/remixicon@3.2.0/fonts/remixicon.css" rel="stylesheet">
-      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" />
-
-      <!--=============== CSS ===============-->
-      <link rel="stylesheet" href="assets/css/style.css">
-
-      <title>SMK MITRA INDUSTRI</title>
-   </head>
-   <body>
-      <!--=============== HEADER ===============-->
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Alexandria School - Vision & Mission</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="assets/css/vision-mission.css">
+    <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+    <!--=============== HEADER ===============-->
       <header class="header">
          <nav class="nav container">
             <div class="nav__data">
@@ -122,105 +119,73 @@
             </div>
          </nav>
       </header>
-
-      <!-- ======= Hero Section ======= -->
-  <main>
-    <div class="hero-new";>
-      <video autoplay loop muted playsinline src="assets/video/videohero.mp4"></video>
-      <h5>SELAMAT DATANG DI</h5>
-      <h1>SMK MITRA INDUSTRI<br>MM2100</h1>
-      <a href="PPDB.html" class="btn btn-secondary">Daftar Sekarang</a>
-    </div>
-
-    <section class="nilai-utama">
-      <h2>5 Nilai Utama</h2>
-      <div class="nilai-grid">
-         <div class="nilai-item">
-            <img src="assets/img/jujur.png" alt="Jujur" />
-            <p>Jujur</p>
-         </div>
-         <div class="nilai-item">
-            <img src="assets/img/tanggungjawab.png" alt="Tanggung Jawab" />
-            <p>Tanggung Jawab</p>
-         </div>
-         <div class="nilai-item">
-            <img src="assets/img/displin.png" alt="Disiplin" />
-            <p>Disiplin</p>
-         </div>
-         <div class="nilai-item">
-            <img src="assets/img/kerjasama.png" alt="Kerja Sama" />
-            <p>Kerja Sama</p>
-         </div>
-         <div class="nilai-item">
-            <img src="assets/img/peduli.png" alt="Peduli" />
-            <p>Peduli</p>
-         </div>
-      </div>
-    </section>
-
-
-    <!-- ======= Features Section ======= -->
-    <section class="features" id="tentang">
-      <div class="features-container">
-        <div class="section-title">
-          <h2>Mengapa Memilih SMK Mitra Industri MM2100?</h2>
-          <p>Kami berkomitmen memberikan pendidikan kejuruan terbaik dengan fasilitas modern dan tenaga pengajar profesional</p>
+    <!--=============== MAIN CONTENT ===============-->
+    <div class="container">
+        <!-- Header Navigation Buttons -->
+        <div class="header-nav">
+            <button id="visionBtn" class="nav-btn active" data-target="vision">
+                <svg class="btn-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z"></path>
+                    <circle cx="12" cy="12" r="3"></circle>
+                </svg>
+                <span>Vision</span>
+            </button>
+            
+            <button id="missionBtn" class="nav-btn" data-target="mission">
+                <svg class="btn-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <circle cx="12" cy="12" r="10"></circle>
+                    <circle cx="12" cy="12" r="6"></circle>
+                    <circle cx="12" cy="12" r="2"></circle>
+                </svg>
+                <span>Mission</span>
+            </button>
         </div>
-        <div class="features-grid">
-          <div class="feature-card fade-in">
-            <div class="feature-icon">💼</div>
-            <h3>Siap Kerja</h3>
-            <p>Kurikulum yang disesuaikan dengan kebutuhan industri modern untuk menghasilkan lulusan yang siap bekerja</p>
-          </div>
-          <div class="feature-card fade-in delay-1">
-            <div class="feature-icon">🔧</div>
-            <h3>Fasilitas Modern</h3>
-            <p>Laboratorium dan workshop dengan peralatan terkini untuk mendukung pembelajaran praktik yang optimal</p>
-          </div>
-          <div class="feature-card fade-in delay-2">
-            <div class="feature-icon">👨‍🏫</div>
-            <h3>Guru Berpengalaman</h3>
-            <p>Tenaga pengajar profesional dan berpengalaman yang siap membimbing siswa mencapai potensi terbaik</p>
-          </div>
-          <div class="feature-card fade-in delay-3">
-            <div class="feature-icon">🤝</div>
-            <h3>Kerjasama Industri</h3>
-            <p>Memiliki kemitraan yang kuat dengan berbagai perusahaan untuk program magang dan penempatan kerja</p>
-          </div>
-          <div class="feature-card fade-in">
-            <div class="feature-icon">🏆</div>
-            <h3>Prestasi Terbaik</h3>
-            <p>Meraih berbagai penghargaan tingkat regional dan nasional dalam kompetisi keahlian</p>
-          </div>
-          <div class="feature-card fade-in delay-1">
-            <div class="feature-icon">🌐</div>
-            <h3>Akses Digital</h3>
-            <p>Pembelajaran digital terintegrasi dengan platform modern untuk mendukung proses belajar mengajar</p>
-          </div>
+
+        <!-- Content Cards -->
+        <div class="content-wrapper">
+            <!-- Vision Content -->
+            <div id="visionContent" class="content-card active">
+                <div class="card-inner">
+                    <div class="card-image">
+                        <img src="https://cdn1-production-images-kly.akamaized.net/8BH84nzghyxKmwe8RhCvSlUFh00=/1200x675/smart/filters:quality(75):strip_icc():format(webp)/kly-media-production/medias/4474385/original/072897700_1687271532-20230620-SMK-Mitra-Industri-M2100-Herman-1.jpg" alt="Alexandria School Building">
+                    </div>
+                    <div class="card-text">
+                        <h2 class="content-title">Vision</h2>
+                        <p class="content-description">
+                            Menjadi lembaga pendidikan yang mampu mewujudkan generasi yang berwawasan dan berkapasitas global, berkarakter, dan berintegritas serta dapat membangun peradaban yang berlandaskan nilai-nilai Islam yang universal.
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Mission Content -->
+            <div id="missionContent" class="content-card">
+                <div class="card-inner">
+                    <div class="card-image">
+                        <img src="/images/school.jpg" alt="Alexandria School Building">
+                    </div>
+                    <div class="card-text">
+                        <h2 class="content-title">Mission</h2>
+                        <div class="mission-list">
+                            <p class="mission-item">
+                                <span class="bullet">•</span>
+                                Menyelenggarakan pendidikan berkualitas yang berorientasi pada pembentukan karakter dan akhlak mulia.
+                            </p>
+                            <p class="mission-item">
+                                <span class="bullet">•</span>
+                                Mengembangkan potensi peserta didik secara optimal melalui pembelajaran aktif dan kreatif.
+                            </p>
+                            <p class="mission-item">
+                                <span class="bullet">•</span>
+                                Mendorong terciptanya lingkungan belajar yang Islami dan inklusif.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
-      </div>
-    </section>
-
-    <!-- ======= Dukungan Industri ======= -->
-    <section class="mm2100-support">
-      <h2>Didukung oleh Perusahaan Kawasan Industri MM2100</h2>
-      <div class="image-wrapper">
-        <img src="assets/img/mm2100-companies.png" alt="Logo Perusahaan MM2100" />
-      </div>
-    </section>
-  </main>
-
-  <!-- ======= Popup PPDB ======= -->
-  <div id="ppdb-popup" class="popup">
-    <div class="popup-content">
-      <a href="PPDB.html">
-        <img src="brosur-ppdb.png" alt="PPDB SMK Mitra Industri" />
-      </a>
-      <button class="close-btn" aria-label="Tutup popup">×</button>
     </div>
-  </div>
-
-  <!-- ======= Footer ======= -->
+    <!-- ======= Footer ======= -->
   <footer class="footer">
     <div class="footer-content">
       <div class="footer-column">
@@ -281,8 +246,7 @@
       Copyright © 2025 SMK Mitra Industri MM2100. All rights reserved.
     </div>
   </footer>
-
-      <!--=============== MAIN JS ===============-->
-      <script src="assets/js/main.js"></script>
-   </body>
+    <!--=============== MAIN JS ===============-->
+    <script src="assets/js/vision-mission.js"></script>
+</body>
 </html>
