@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsive Nilai Gallery</title>
+    <style>
+        .nilai-grid {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+
+        .nilai-item {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+
+        .nilai-item img {
+            width: 100%;
+            height: auto;
+            max-width: 150px; /* Adjust as needed */
+        }
+
+        .nilai-item p {
+            margin: 10px 0 0 0;
+            font-weight: bold;
+        }
+
+        /* Desktop view: 5 items in a row */
+        .desktop-view {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 10px; /* Optional gap between items */
+        }
+
+        .desktop-view .nilai-item {
+            flex: 1 1 calc(20% - 10px); /* 20% width minus gap for 5 items */
+            box-sizing: border-box;
+        }
+
+        /* Mobile view: hidden by default */
+        .mobile-view {
+            display: none;
+        }
+
+        .mobile-view .row {
+            display: flex;
+            justify-content: center;
+            gap: 10px; /* Optional gap */
+            margin-bottom: 20px;
+        }
+
+        .mobile-view .row .nilai-item {
+            flex: 1 1 calc(33.33% - 10px); /* 33.33% for 3 items in a row */
+            box-sizing: border-box;
+        }
+
+        .mobile-view .center .nilai-item {
+            flex: 1 1 calc(50% - 10px); /* 50% for 2 items, centered */
+            box-sizing: border-box;
+        }
+
+        /* Media query for mobile (SP mode) */
+        @media (max-width: 767px) {
+            .desktop-view {
+                display: none;
+            }
+            .mobile-view {
+                display: block;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="nilai-grid">
+        <!-- Desktop view: 5 items in a row -->
+        <div class="desktop-view">
+            <div class="nilai-item">
+                <img src="assets/img/jujur.png" alt="Jujur" />
+                <p>Jujur</p>
+            </div>
+            <div class="nilai-item">
+                <img src="assets/img/tanggungjawab.png" alt="Tanggung Jawab" />
+                <p>Tanggung Jawab</p>
+            </div>
+            <div class="nilai-item">
+                <img src="assets/img/displin.png" alt="Disiplin" />
+                <p>Disiplin</p>
+            </div>
+            <div class="nilai-item">
+                <img src="assets/img/kerjasama.png" alt="Kerja Sama" />
+                <p>Kerja Sama</p>
+            </div>
+            <div class="nilai-item">
+                <img src="assets/img/peduli.png" alt="Peduli" />
+                <p>Peduli</p>
+            </div>
+        </div>
+
+        <!-- Mobile view: 3 items in first row, 2 centered in second row -->
+        <div class="mobile-view">
+            <div class="row">
+                <div class="nilai-item">
+                    <img src="assets/img/jujur.png" alt="Jujur" />
+                    <p>Jujur</p>
+                </div>
+                <div class="nilai-item">
+                    <img src="assets/img/tanggungjawab.png" alt="Tanggung Jawab" />
+                    <p>Tanggung Jawab</p>
+                </div>
+                <div class="nilai-item">
+                    <img src="assets/img/displin.png" alt="Disiplin" />
+                    <p>Disiplin</p>
+                </div>
+            </div>
+            <div class="row center">
+                <div class="nilai-item">
+                    <img src="assets/img/kerjasama.png" alt="Kerja Sama" />
+                    <p>Kerja Sama</p>
+                </div>
+                <div class="nilai-item">
+                    <img src="assets/img/peduli.png" alt="Peduli" />
+                    <p>Peduli</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
