@@ -16,18 +16,22 @@ body { font-family:'Poppins',sans-serif; line-height:1.7; color:#333; background
 
 /* Intro */
 .intro { padding:60px 20px; text-align:center; }
-.school-logo { max-width:300px; margin-bottom:20px; }
+.school-logo { max-width:300px; margin-bottom:20px; width: 100%; height: auto; }
 .intro-text { max-width:800px; margin:0 auto; font-size:16px; color:#374151; }
 
+/* Method Section */
 .method {
   padding: 60px 20px;
 }
 
+/* Container */
 .container {
   max-width: 1200px;
   margin: 0 auto;
+  padding: 0 20px;
 }
 
+/* Section Titles */
 .section-title {
   font-size: 28px;
   font-weight: 700;
@@ -36,7 +40,15 @@ body { font-family:'Poppins',sans-serif; line-height:1.7; color:#333; background
   margin-bottom: 40px;
 }
 
-/* Grid */
+.section-text {
+  font-size: 16px;
+  color: #374151;
+  line-height: 1.8;
+  margin-bottom: 30px;
+  text-align: center;
+}
+
+/* Method Grid */
 .method-grid {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
@@ -61,36 +73,13 @@ body { font-family:'Poppins',sans-serif; line-height:1.7; color:#333; background
   border-radius: 12px;
   box-shadow: 0 6px 16px rgba(0,0,0,0.1);
   margin-bottom: 15px;
+  display: block;
 }
 
 .method-text {
   font-size: 16px;
   color: #374151;
   line-height: 1.6;
-}
-
-/* Container */
-.container {
-  max-width: 1200px;
-  margin: 0 auto;
-  padding: 40px 20px;
-}
-
-/* Section Titles */
-.section-title {
-  font-size: 28px;
-  font-weight: 700;
-  color: #1e3a8a;
-  margin-bottom: 20px;
-  text-align: center;
-}
-
-.section-text {
-  font-size: 16px;
-  color: #374151;
-  line-height: 1.8;
-  margin-bottom: 30px;
-  text-align: center;
 }
 
 /* Icon Grid */
@@ -108,11 +97,12 @@ body { font-family:'Poppins',sans-serif; line-height:1.7; color:#333; background
   padding: 20px;
   text-align: center;
   box-shadow: 0 6px 16px rgba(0,0,0,0.05);
-  transition: transform 0.3s ease;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
 .icon-box:hover {
   transform: translateY(-5px);
+  box-shadow: 0 8px 20px rgba(0,0,0,0.1);
 }
 
 .icon {
@@ -127,19 +117,153 @@ body { font-family:'Poppins',sans-serif; line-height:1.7; color:#333; background
   color: #1e3a8a;
 }
 
-/* Responsive */
-@media (max-width: 768px) {
-  .section-title { font-size: 24px; }
-  .section-text { font-size: 15px; }
-  .icon { font-size: 28px; }
+/* Tablet Responsive (max-width: 1024px) */
+@media (max-width: 1024px) {
+  .container {
+    padding: 0 30px;
+  }
+  
+  .page-title {
+    font-size: 36px;
+  }
+  
+  .section-title {
+    font-size: 26px;
+  }
+  
+  .method-grid {
+    gap: 25px;
+  }
+  
+  .icon-grid {
+    grid-template-columns: repeat(auto-fit, minmax(140px, 1fr));
+    gap: 18px;
+  }
 }
 
-/* Responsive */
-@media(max-width:768px){
+/* Mobile Responsive (max-width: 768px) */
+@media (max-width: 768px) {
+  .breadcrumbs-bg {
+    padding: 60px 20px;
+  }
+  
+  .page-title {
+    font-size: 32px;
+  }
+  
+  .breadcrumbs-nav {
+    font-size: 14px;
+  }
+  
+  .intro {
+    padding: 40px 20px;
+  }
+  
+  .school-logo {
+    max-width: 220px;
+  }
+  
+  .intro-text {
+    font-size: 15px;
+  }
+  
+  .method {
+    padding: 40px 20px;
+  }
+  
+  .section-title {
+    font-size: 24px;
+    margin-bottom: 30px;
+  }
+  
+  .section-text {
+    font-size: 15px;
+  }
+  
   .method-grid {
     grid-template-columns: 1fr;
+    gap: 30px;
   }
-  .section-title { font-size: 24px; }
-  .method-title { font-size: 20px; }
-  .method-text { font-size: 15px; }
+  
+  .method-title {
+    font-size: 20px;
+  }
+  
+  .method-text {
+    font-size: 15px;
+  }
+  
+  .icon-grid {
+    grid-template-columns: repeat(auto-fit, minmax(130px, 1fr));
+    gap: 15px;
+  }
+  
+  .icon {
+    font-size: 28px;
+  }
+  
+  .icon-box {
+    padding: 18px;
+  }
+  
+  .icon-box h3 {
+    font-size: 15px;
+  }
+}
+
+/* Small Mobile (max-width: 480px) */
+@media (max-width: 480px) {
+  .breadcrumbs-bg {
+    padding: 50px 15px;
+  }
+  
+  .page-title {
+    font-size: 28px;
+  }
+  
+  .breadcrumbs-nav {
+    font-size: 13px;
+  }
+  
+  .intro {
+    padding: 30px 15px;
+  }
+  
+  .school-logo {
+    max-width: 180px;
+  }
+  
+  .method {
+    padding: 30px 15px;
+  }
+  
+  .section-title {
+    font-size: 22px;
+    margin-bottom: 25px;
+  }
+  
+  .method-title {
+    font-size: 18px;
+  }
+  
+  .method-text {
+    font-size: 14px;
+  }
+  
+  .icon-grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 12px;
+  }
+  
+  .icon {
+    font-size: 24px;
+  }
+  
+  .icon-box {
+    padding: 15px;
+  }
+  
+  .icon-box h3 {
+    font-size: 14px;
+  }
 }
