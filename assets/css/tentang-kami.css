@@ -15,8 +15,20 @@ body { font-family:'Poppins',sans-serif; line-height:1.7; color:#333; background
 .breadcrumbs-nav .current { color:#facc15; font-weight:600; }
 
 /* Intro */
-.intro { padding:60px 20px; text-align:center; }
-.school-logo { max-width:300px; margin-bottom:20px; width: 100%; height: auto; }
+.intro {
+  display: flex;
+  flex-direction: column;   /* susun logo dan teks ke bawah */
+  align-items: center;      /* center horizontal */
+  justify-content: center;  /* center vertical */
+  text-align: center;
+}
+
+.school-logo {
+  display: block;
+  margin: 0 auto 20px;      /* logo di tengah dengan jarak bawah */
+  max-width: 300px;         /* sesuaikan ukuran */
+  height: auto;
+}
 .intro-text { max-width:800px; margin:0 auto; font-size:16px; color:#374151; }
 
 /* Method Section */
